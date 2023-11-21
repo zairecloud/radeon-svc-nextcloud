@@ -21,6 +21,7 @@ services:
   app:
     image: nextcloud:apache
     restart: unless-stopped
+    container_name: nextcloud
     expose:
       - "80"
     volumes:
